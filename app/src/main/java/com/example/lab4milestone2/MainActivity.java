@@ -41,11 +41,34 @@ public class MainActivity extends AppCompatActivity {
                 ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION)!= PackageManager.PERMISSION_GRANTED){
             ActivityCompat.requestPermissions(this,new String[]{Manifest.permission.ACCESS_FINE_LOCATION},1);
         }
-        locationManager=(LocationManager) this.getSystemService(Context.LOCATION_SERVICE);
-        locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER,0,0,locationListener);
-        Location location=locationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER);
-        if(location!=null){
-            updateLocationInfo(location);
+        else {
+            locationManager = (LocationManager) this.getSystemService(Context.LOCATION_SERVICE);
+            locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER,0,0,locationListener);
+            //locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 0, 0, new LocationListener() {
+//                @Override
+//                public void onLocationChanged(Location location) {
+//                    updateLocationInfo(location);
+//                }
+//
+//                @Override
+//                public void onStatusChanged(String s, int i, Bundle bundle) {
+//
+//                }
+//
+//                @Override
+//                public void onProviderEnabled(String s) {
+//
+//                }
+//
+//                @Override
+//                public void onProviderDisabled(String s) {
+//
+//                }
+//            });
+            Location location = locationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER);
+            if (location != null) {
+                updateLocationInfo(location);
+            }
         }
 
 
