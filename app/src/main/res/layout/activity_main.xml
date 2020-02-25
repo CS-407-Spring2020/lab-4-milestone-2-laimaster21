@@ -16,51 +16,51 @@
         tools:srcCompat="@tools:sample/backgrounds/scenic" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/latTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="12dp"
         android:layout_marginLeft="12dp"
         android:layout_marginBottom="8dp"
         android:text="Latitude"
-        app:layout_constraintBottom_toTopOf="@+id/textView2"
-        app:layout_constraintStart_toStartOf="@+id/textView2" />
+        app:layout_constraintBottom_toTopOf="@+id/lonTextView"
+        app:layout_constraintStart_toStartOf="@+id/lonTextView" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/lonTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:text="Longitude"
-        app:layout_constraintBottom_toTopOf="@+id/textView3"
-        app:layout_constraintStart_toStartOf="@+id/textView3" />
+        app:layout_constraintBottom_toTopOf="@+id/altTextView"
+        app:layout_constraintStart_toStartOf="@+id/altTextView" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/altTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
-        android:text="TextView"
-        app:layout_constraintBottom_toTopOf="@+id/textView4"
-        app:layout_constraintStart_toStartOf="@+id/textView4" />
+        android:text="altitude"
+        app:layout_constraintBottom_toTopOf="@+id/accTextView"
+        app:layout_constraintStart_toStartOf="@+id/accTextView" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/accTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
-        android:text="TextView"
-        app:layout_constraintBottom_toTopOf="@+id/textView5"
-        app:layout_constraintStart_toStartOf="@+id/textView5" />
+        android:text="accuracy"
+        app:layout_constraintBottom_toTopOf="@+id/addTextView"
+        app:layout_constraintStart_toStartOf="@+id/addTextView" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/addTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
         android:layout_marginLeft="30dp"
         android:layout_marginBottom="100dp"
-        android:text="TextView"
+        android:text="address"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
